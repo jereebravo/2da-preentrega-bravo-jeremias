@@ -65,8 +65,7 @@
 
 header{
     background-color: #ffd6e4;
-    height: 100px;
-    
+    height: 100px;   
 }
 
  .logoNav{
@@ -137,12 +136,15 @@ header{
 
 
 footer{
+    position: relative;
+    bottom: 0;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
      grid-template-areas: 
     "info logo redes ";
     height: 100px;
     background-color: #e2445f;
+    
     
 }
 
@@ -198,7 +200,7 @@ justify-content: center;
        width: 50px;
 }
   
-/* ---------------------------CONFIGURACION DEE PAGINA FORMULARIO------------------------------- */
+/* ---------------------------CONFIGURACION DE PAGINA FORMULARIO------------------------------- */
     
 #main_formulario{
     display: grid;
@@ -291,18 +293,56 @@ justify-content: space-around;
 
 
 #main_info section{
-  height: 80%;
+  height: 90%;
 }
-#main_info section h2{
- margin-left: 40px;   
+#main_info section {
+ padding: 40px;   
 }
 #main_info section p{
 font-family: Arial, Helvetica, sans-serif;
 margin-top: 40px;
-margin-left: 30px;
 }
 .preguntas{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
 }
+
+/* ------------------------------PAGINAS RESPONSIVE-------------------------------------- */
+/* formulario RESPONSIVE */
+
+
+@media screen and (max-width: 480px){
+    #body_formulario{
+       height: 300vh;
+    }
+    
+    
+    #main_formulario{
+        height: 280vh;
+        grid-template-rows: repeat(2 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "form"
+        "asideform";
+    }
+    .formulario{
+        display: inline;
+        margin-right: 50px;
+    }
+    .formulario h2{
+     margin-right: 100px;
+     margin-top: 30px;
+    }
+    
+footer{
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "logo"
+    "info"
+    "redes";
+height: 300px;}
+}
+
+    
