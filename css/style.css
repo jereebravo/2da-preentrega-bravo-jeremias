@@ -289,7 +289,20 @@ justify-content: space-around;
     height: 150vh;
  }
 
-.main_info div{
-    height: 80%;
-}
 
+#main_info section{
+  height: 80%;
+}
+#main_info section h2{
+ margin-left: 40px;   
+}
+#main_info section p{
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 40px;
+margin-left: 30px;
+}
+.preguntas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
