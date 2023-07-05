@@ -1,0 +1,268 @@
+/* tipografias */
+@font-face {
+    font-family: "fuenteUno";
+    src: url("../assets/fonts/Beckman-FREE.otf");
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(../assets/fonts/GentyDemo-Regular.otf);
+}
+ 
+/* cierre tipografias */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* configuracion del formulario */
+
+#tituloFormulario{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2rem;
+    font-weight: 400;
+    border-bottom: 1px solid #000;
+     margin-left: 20px;
+   
+}
+
+.formulario{
+    width: 400px;
+    margin: 40px;
+    
+}
+.formulario label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1rem;
+    font-weight: 500;
+}
+
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+#costadoDelForm{
+    display: inline-block;
+    position: relative;
+    left: 500px;
+    vertical-align: middle;
+    
+}
+
+#costadoDelForm li{
+    font-family: "fuenteUno";
+    font-size: 1.2rem;
+    margin-bottom: 40px; 
+}
+/* cierre de configuracion del form */
+
+header{
+    background-color: #ffd6e4;
+    height: 100px;
+    
+}
+
+ .logoNav{
+    height: 75px;
+}
+
+/* ----------------------------CONFIGURACION PAGINA INDEX------------------------------- */
+
+#body_index{
+    height: 150vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+#main_index{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "sectionuno sectionuno"
+    "sectiondos sectiondos"
+    ;
+}
+
+#sectionUno{
+    grid-area: sectionuno;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#sectionUno img{
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+
+}
+#sectionDos{
+    grid-area: sectiondos;
+    
+}
+#sectionDos div{
+    background-color: #000;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+     grid-template-areas: 
+    "info logo redes ";
+    height: 100px;
+    background-color: #e2445f;
+    
+}
+
+.infofooter{
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.infofooter a{
+    margin-right: 20px;
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    
+}
+
+.infofooter a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+.redesfooter{
+grid-area: redes;
+
+display: flex;
+justify-content: center;
+}
+ .redesfooter a{
+    margin-right: 20px;
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+   
+ }
+
+ .redesfooter a:hover{
+    text-decoration: underline;
+    color: #000;
+ }
+.logofooter{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logofooter img{
+       height: 50px;
+       width: 50px;
+}
+  
+/* ---------------------------CONFIGURACION DEE PAGINA FORMULARIO------------------------------- */
+    
+#main_formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "form asideform"
+    ;
+}
+
+.formulario{
+    grid-area: form;
+}
+.formulario div label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.asideform{
+  grid-area: asideform;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.asideform div ul h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.asideform div ul p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* --------------------------CONFIGURACION DE PAGINA PRODUCTOS------------------------------------------ */
+#body_productos{
+    height: 220vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+#main_productos{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "filaUno filaUno filaUno"
+    "filaDos filaDos filaDos"
+    "filaTres filaTres filaTres";
+    height: 90%;
+}
+
+#main_productos secction div{
+    height: 400px;
+    background-color: black;
+}
+
+.imagenes{
+    height:300px;
+    width: 300px;
+    margin-top: 30px;
+
+}
+
+
+.produ_fila_uno{
+grid-area: filaUno;
+background-color: gold;
+display: flex;
+justify-content: space-around;
+
+}
+.produ_fila_dos{
+grid-area: filaDos;
+background-color: gold;
+display: flex;
+justify-content: space-around;
+}
+
+.produ_fila_tres{
+grid-area: filaTres;
+background-color: gold;
+display: flex;
+justify-content: space-around;
+}
+
+/* ---------------------------------CONFIGURACION DE INFORMACION----------------------------- */
+#body_informacion{
+    height: 150vh;
+ }
+
+.main_info div{
+    height: 80%;
+}
