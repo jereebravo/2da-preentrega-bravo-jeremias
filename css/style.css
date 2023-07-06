@@ -289,6 +289,9 @@ justify-content: space-around;
 /* ---------------------------------CONFIGURACION DE INFORMACION----------------------------- */
 #body_informacion{
     height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
  }
 
 
@@ -345,4 +348,23 @@ footer{
 height: 300px;}
 }
 
-    
+@media screen and (max-width: 480px){
+    #body_informacion{
+        height: 200vh;
+    }
+
+
+  #main_info {
+    padding-bottom: 30px;
+  }
+
+    footer{
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "logo"
+        "info"
+        "redes";
+    height: 300px;}
+
+}  
