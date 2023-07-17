@@ -23,13 +23,12 @@
     font-size:2rem;
     font-weight: 400;
     border-bottom: 1px solid #000;
-     margin-left: 20px;
-   
+     margin-left: 20px; 
 }
 
 .formulario{
     width: 400px;
-    margin: 40px;
+    margin:40px;
     
 }
 .formulario label{
@@ -41,7 +40,7 @@
 
 .formulario input,
 .formulario textarea {
-  width: 100%;
+  width: 150%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -51,7 +50,7 @@
 #costadoDelForm{
     display: inline-block;
     position: relative;
-    left: 500px;
+    left: 700px;
     vertical-align: middle;
     
 }
@@ -212,6 +211,7 @@ justify-content: center;
 
 .formulario{
     grid-area: form;
+    margin-left: 100px;
 }
 .formulario div label{
     font-family: Arial, Helvetica, sans-serif;
@@ -235,7 +235,7 @@ justify-content: center;
 
 /* --------------------------CONFIGURACION DE PAGINA PRODUCTOS------------------------------------------ */
 #body_productos{
-    height: 195vh;
+    height: 160vh;
     grid-template-rows: auto 1fr auto;
 }
 
@@ -251,13 +251,13 @@ justify-content: center;
 }
 
 #main_productos secction div{
-    height: 400px;
+    height: 350px;
     
 }
 
 .imagenes{
-    height:300px;
-    width: 300px;
+    height:330px;
+    width:330px;
     margin-top: 30px;
 
 }
@@ -288,7 +288,7 @@ justify-content: space-around;
 
 /* ---------------------------------CONFIGURACION DE INFORMACION----------------------------- */
 #body_informacion{
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -309,6 +309,44 @@ margin-top: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
+}
+
+/*----------------------------------CONFIGURACION PAGINA MEDIDAS------------------------------- */
+#body_medidas{
+    height: 100vh;
+}
+.main_medidas{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "hombre mujer"
+    "infantil bebe";
+}
+.medidas_hombre{
+   grid-area: hombre;
+}
+.medidas_mujer{
+    grid-area: mujer;
+}
+.medidas_infantil{
+    grid-area: infantil;
+}
+.medidas_bebe{
+    grid-area: bebe;
+
+}
+  
+.main_medidas div{
+    height: 30vh;
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_medidas img{
+    border: solid black 3px;
 }
 
 /* ------------------------------PAGINAS RESPONSIVE-------------------------------------- */
