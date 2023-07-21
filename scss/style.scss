@@ -1,0 +1,15 @@
+@import "./modulos/variables";
+@import "./modulos/fonts";
+@import "./modulos/header";
+@import "./modulos/paginaindex/index.scss";
+@import "./modulos/paginaproductos/productos.scss";
+@import "./modulos/paginamedidas/medidas.scss";
+@import "./modulos/paginainformacion/informacion.scss";
+@import "./modulos/paginaformulario/formulario";
+@import "./modulos/footer";
+@import "./modulos/mixin";
+
+* {
+    @include reset;
+}
+

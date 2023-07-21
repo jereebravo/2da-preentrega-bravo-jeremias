@@ -1,0 +1,48 @@
+#body_productos{
+    height: 180vh;
+    #main_productos{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "filaUno filaUno filaUno"
+        "filaDos filaDos filaDos"
+        "filaTres filaTres filaTres";
+        height: 90%;
+        section{
+            div{
+                height: 330px;
+                width: 330px;
+                .imagenes{
+                    height: 330px;
+                    width: 330px;
+                    margin-top: 20px;
+                    &:hover{
+                        border: 1px solid #000;
+                    }
+                
+                }
+            }
+        }
+        .produ_fila_uno{
+            grid-area: filaUno;
+            display: flex;
+            justify-content: space-around;
+        }
+        .produ_fila_dos{
+            grid-area: filaDos;
+            display: flex;
+            justify-content: space-around;
+        }
+        .produ_fila_tres{
+            grid-area: filaTres;
+            display: flex;
+            justify-content: space-around;
+           
+        }
+    }
+}
+
+
+
+

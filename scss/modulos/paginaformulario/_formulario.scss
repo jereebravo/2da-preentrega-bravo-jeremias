@@ -1,0 +1,66 @@
+#body_formulario{
+    height: 130vh;
+    #main_formulario{
+        height: 85%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "form asideform";
+        .formulario{
+            padding-top: 30px;
+            grid-area: form;
+            width: 300px;
+            height: 400px;
+            margin-left: 100px;
+            #tituloFormulario{
+                display: inline;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 2rem;
+                font-weight: 400;
+                border-bottom: 1px solid #000;
+                margin-left: 20px;}
+
+            form{
+                label{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+                input,textarea{
+                    width: 150%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+
+        .asideform{
+            grid-area:asideform;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+                 div{
+                    ul{ 
+                        h3{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 40px;
+                        }
+                        p{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 20px;
+                        }
+                    }
+                 }
+
+        }
+
+    }
+    
+}
+
+
+
+
+

@@ -1,0 +1,61 @@
+#body_index{
+    height: 120vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    #main_index{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "sectionuno sectionuno"
+        "sectiondos sectiondos";
+        #sectionUno{
+            grid-area: sectionuno;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            div{
+                height: 300px;
+                width: 300px;
+                margin-left: 10px;
+                img{
+                    height: 300px;
+                    width: 300px;
+                    margin-top: 20px;}
+            }
+        }
+        #sectionDos{
+            margin-top: 40px;
+            div{
+               display: flex;
+               align-items: center;
+                    h3{
+                        font-family: "fuenteUno";
+                        color: red;
+                    }
+            }
+            div{
+                width:100%;
+                display: flex;
+                 flex-direction: row;
+                 justify-content: center;
+                 align-items: center;;
+                p{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 25px;
+                    margin-left: 20px;
+                    span{
+                        a{
+                            color: red;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
