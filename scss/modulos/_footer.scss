@@ -5,7 +5,7 @@ footer{
     grid-template-columns: 1fr 0.5fr 1fr;
     grid-template-areas: "info logo redes";
     height: 100px;
-    background-color: #e2445f;
+    background-color: #c50000;
 
     .infofooter{
         grid-area: info;
@@ -17,6 +17,7 @@ footer{
             color: #000;
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
             &:hover{
                 text-decoration: underline;
                 color: #000;

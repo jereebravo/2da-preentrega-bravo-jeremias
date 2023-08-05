@@ -1,39 +1,263 @@
 #body_medidas{
-    height: 100vh;
-    .main_medidas{
+    height: 130vh;
+    
+
+    main{
+        height: 90%;
         display: grid;
-        grid-template-rows: repeat(2 ,1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
+        grid-template-areas: 
         "hombre mujer"
         "infantil bebe";
-        div{
-            height: 30vh;
-            padding: 10px;
-            margin: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img{
-                height: 30vh;
+
+        section{
+            .titulo_medidas{
+                height: 5%;
                 width: 100%;
-            }
-            .medidas_hombre{
-                grid-area: hombre;
-            }
-            .medidas_mujer{
-                grid-area: mujer;
-            }
-            .medidas_infantil{
-                grid-area: infantil;
-            }
-            .medidas_bebe{
-                grid-area: bebe;
-            }
-            img{
-                border: solid black 3px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 20px;
+                h1{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1.5rem;
+                    font-weight:800;
+                    color:#de2342;
+                    text-align: center;
+
+                }
+                h2{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1.5rem;
+                    font-weight:800;
+                    color:#de2342;
+                    text-align: center;
+                }
+                h3{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1.5rem;
+                    font-weight:800;
+                    color:#de2342;
+                    text-align: center;
+                }
+                h4{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1.5rem;
+                    font-weight:800;
+                    color:#de2342;
+                    text-align: center;
+                }
             }
         }
+
+        .section_hombre{
+            grid-area: hombre;
+            height: 100%;
+            width: 100%;
+           
+            .medidas_hombre{
+                height: 70%;
+                width: 100%;
+                margin-top: 15px;
+                padding-top:30px ;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                table{
+                    color: #333333;
+                    font-size: 14px;
+                    table-layout: fixed;
+                    border-collapse: collapse;
+                    background-color:  #ffd6e4;
+                    border: 2px solid #ffc1c8;
+                    width: 90%;
+                    
+                    thead{
+                        background-color: #ffb1c7 ;
+                        color: #fff;
+                        tr{
+                            th{
+                                padding: 20px 15px;
+                                font-weight: 700;
+                                font-family: Arial, Helvetica, sans-serif;
+                                text-transform: uppercase;
+                             
+    
+    
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            cursor: pointer;
+                            &:hover{
+                                background-color: pink;
+                                
+                            }
+                            td{
+                                padding: 20px;
+                                border-bottom: solid 1px pink;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       .section_mujer{
+        grid-area: mujer;
+        height: 100%;
+        width: 100%;
+        .medidas_mujer{
+            height: 70%;
+            width: 100%;
+            margin-top: 15px;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            table{
+                color: #333333;
+                font-size: 14px;
+                table-layout: fixed;
+                border-collapse: collapse;
+                background-color: #ffd6e4;
+                border: 2px solid #ffc1c8;
+                width: 90%;
+                thead{
+                    background-color: #ffb1c7;
+                    color: #fff;
+                    tr{
+                        th{
+                            padding: 20px 15px;
+                            font-weight: 700;
+                            font-family: Arial, Helvetica, sans-serif;
+                            text-transform: uppercase;
+                         }
+                    }
+                }
+                tbody{
+                    tr{
+                        cursor: pointer;
+                        &:hover{
+                            background-color: pink;
+                        }
+                        td{
+                            padding: 20px;
+                            border-bottom: solid 1px pink;
+                        }
+                    }
+                }
+            }
+        }
+
+       }
+       .section_infantil{
+        grid-area: infantil;
+        height: 100%;
+        width: 100%;
+        .medidas_infantil{
+            height: 70%;
+            width: 100%;
+            margin-top: 15px;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            table{
+                color: #333333;
+                font-size: 14px;
+                table-layout: fixed;
+                border-collapse: collapse;
+                background-color: #ffd6e4;
+                border: 2px solid #ffc1c8;
+                width: 90%;
+                thead{
+                    background-color: #ffb1c7 ;
+                    color: #fff;
+                    tr{
+                        
+                        th{
+                            padding: 20px 15px;
+                            font-weight: 700;
+                            font-family: Arial, Helvetica, sans-serif;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        cursor: pointer;
+                        &:hover{
+                            background-color: pink;
+                        }
+                        td{
+                            padding: 20px;
+                            border-bottom: solid 1px pink;
+                        }
+                    }
+                }
+            }
+        }
+
+       }
+       .section_bebe{
+        grid-area: bebe;
+        height: 100%;
+        width: 100%;
+        .medidas_bebe{
+            height: 70%;
+            width: 100%;
+            margin-top: 15px;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          
+            table{
+                color: #333333;
+                font-size: 14px;
+                table-layout: fixed;
+                border-collapse: collapse;
+                background-color: #ffd6e4;
+                border: 2px solid #ffc1c8;
+                width: 90%;
+                thead{
+                    background-color: #ffb1c7;
+                    color: #fff;
+                    tr{
+                        th{
+                            padding: 20px 15px;
+                            font-weight: 700;
+                            font-family: Arial, Helvetica, sans-serif;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        cursor: pointer;
+                        &:hover{
+                            background-color: pink;}
+                        td{
+                            padding: 20px;
+                            border-bottom: solid 1px pink;
+                        }
+                    }
+                }
+            }
+        }
+
+       }
     }
+
 }
+  
 

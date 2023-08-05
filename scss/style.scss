@@ -1,15 +1,22 @@
 @import "./modulos/variables";
 @import "./modulos/fonts";
 @import "./modulos/header";
+@import "./modulos/footer";
 @import "./modulos/paginaindex/index.scss";
 @import "./modulos/paginaproductos/productos.scss";
 @import "./modulos/paginamedidas/medidas.scss";
 @import "./modulos/paginainformacion/informacion.scss";
 @import "./modulos/paginaformulario/formulario";
-@import "./modulos/footer";
-@import "./modulos/mixin";
+@import "./modulos/mediaquery";
 
-* {
-    @include reset;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+ 
+
+
+
 

@@ -1,61 +1,95 @@
-#body_index{
-    height: 120vh;
+
+#body_index {
+    height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    #main_index{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "sectionuno sectionuno"
-        "sectiondos sectiondos";
-        #sectionUno{
-            grid-area: sectionuno;
+    
+    main {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "sectionUno"
+        "sectionDos";
+      height: 90%;
+      
+      .sectionUno {
+        height: 60%;
+        .index_titulo {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            div{
-                height: 300px;
-                width: 300px;
-                margin-left: 10px;
-                img{
-                    height: 300px;
-                    width: 300px;
-                    margin-top: 20px;}
-            }
+            justify-content: center;
+            margin-top: 20px;
+           h1{
+            font-size: 3rem;
+            color: red;
+            font-family: "fuenteUno";
+          }
         }
-        #sectionDos{
-            margin-top: 40px;
-            div{
-               display: flex;
-               align-items: center;
-                    h3{
-                        font-family: "fuenteUno";
-                        color: red;
-                    }
-            }
-            div{
-                width:100%;
-                display: flex;
-                 flex-direction: row;
-                 justify-content: center;
-                 align-items: center;;
-                p{
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 25px;
-                    margin-left: 20px;
-                    span{
-                        a{
-                            color: red;
-                            text-decoration: none;
-                            &:hover{
-                                text-decoration: underline;
-                            }
-                        
-                        }
-                    }
+        
+        .index_Parrafo {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          p {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 10px;
+            span{
+               a{
+                text-decoration: none;
+                color: red;
+                &:hover{
+                    text-decoration: underline;
+                    color: red;
                 }
+               }
+                
             }
+          }
         }
+      }
+      
+      .sectionDos {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30px;
+        
+        .icono_index {
+          width: 300px;
+          height: 300px;
+          border: 2px solid black;
+          border-radius: 8px;
+          padding: 20px;
+          text-align: center;
+          box-shadow: 0,0,0,0.2;
+          transition: all 400ms ease;
+          // background-image: linear-gradient(to right, #ffadc0, #ffc5d8, #ffd6e4);
+          &:hover{
+            box-shadow: 5px 7px 30px rgba(119, 35, 35, 0.8);
+          }
+          
+          img {
+            height: 100px;
+            width: 100px;
+            color:black;
+            background-color: rosybrown;
+            border-radius: 50%;
+            margin-bottom: 5px;
+
+          }
+          p{
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+          }
+        }
+
+      }
     }
-}
+  }
+  

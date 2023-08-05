@@ -1,47 +1,93 @@
 #body_productos{
-    height: 180vh;
-    #main_productos{
+      height: 130vh;
+    main{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "filaUno filaUno filaUno"
-        "filaDos filaDos filaDos"
-        "filaTres filaTres filaTres";
-        height: 90%;
-        section{
-            div{
-                height: 330px;
-                width: 330px;
-                .imagenes{
-                    height: 330px;
-                    width: 330px;
-                    margin-top: 20px;
-                    &:hover{
-                        border: 1px solid #000;
-                    }
-                
+        grid-template-rows: 0,5fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo" 
+        "filaUno"
+        "filaDos"
+        "filaTres";
+
+        .titulo_producto{
+            grid-area: titulo;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            h1{
+                font-family: "fuenteUno";
+                color: red;
+                &:hover{
+                text-decoration: underline;
                 }
+               
             }
         }
-        .produ_fila_uno{
+        
+        section{
+          
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 10px;
+            .contenedor_producto{
+                height: 350px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #f0f0f0;
+                
+            &:hover{
+                border: 1.5px solid black;
+            }  
+               
+                img{
+                    height: 90%;
+                    width: 100%;
+                   
+                }
+                .nombre_producto{
+                    margin-top: 10px;
+                    text-align: left;
+                    height: auto;
+                    width: 100%;
+                    p{
+                        font-size: 1rem;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color:black;
+                        font-weight: 400;
+                        padding-left: 5px;
+                    }
+                }
+                
+            }
+        }
+        .productos_fila_uno{
             grid-area: filaUno;
-            display: flex;
-            justify-content: space-around;
-        }
-        .produ_fila_dos{
-            grid-area: filaDos;
-            display: flex;
-            justify-content: space-around;
-        }
-        .produ_fila_tres{
-            grid-area: filaTres;
-            display: flex;
-            justify-content: space-around;
            
+
         }
+        .productos_fila_dos{
+            grid-area: filaDos;
+         
+
+        }
+        .productos_fila_tres{
+            grid-area: filaTres;
+           margin-bottom: 30px;
+
+        }
+
+
     }
+    
+
 }
+
+
 
 
 

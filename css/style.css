@@ -1,179 +1,16 @@
 @font-face {
   font-family: "titulo";
-  src: url(.../assets/fonts/GentyDemo-Regular.otf); }
+  src: url(../../assets/fonts/); }
 
 @font-face {
   font-family: "fuenteUno";
-  src: url(".../assets/fonts/Beckman-FREE.otf"); }
+  src: url("../../assets/fonts/GentyDemo-Regular.otf"); }
 
 header {
   background-color: #ffd6e4;
   height: 100px; }
   header .logoNav {
     height: 75px; }
-
-#body_index {
-  height: 120vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto; }
-  #body_index #main_index {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "sectionuno sectionuno" "sectiondos sectiondos"; }
-    #body_index #main_index #sectionUno {
-      grid-area: sectionuno;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-      #body_index #main_index #sectionUno div {
-        height: 300px;
-        width: 300px;
-        margin-left: 10px; }
-        #body_index #main_index #sectionUno div img {
-          height: 300px;
-          width: 300px;
-          margin-top: 20px; }
-    #body_index #main_index #sectionDos {
-      margin-top: 40px; }
-      #body_index #main_index #sectionDos div {
-        display: flex;
-        align-items: center; }
-        #body_index #main_index #sectionDos div h3 {
-          font-family: "fuenteUno";
-          color: red; }
-      #body_index #main_index #sectionDos div {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center; }
-        #body_index #main_index #sectionDos div p {
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 25px;
-          margin-left: 20px; }
-          #body_index #main_index #sectionDos div p span a {
-            color: red;
-            text-decoration: none; }
-            #body_index #main_index #sectionDos div p span a:hover {
-              text-decoration: underline; }
-
-#body_productos {
-  height: 180vh; }
-  #body_productos #main_productos {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "filaUno filaUno filaUno" "filaDos filaDos filaDos" "filaTres filaTres filaTres";
-    height: 90%; }
-    #body_productos #main_productos section div {
-      height: 330px;
-      width: 330px; }
-      #body_productos #main_productos section div .imagenes {
-        height: 330px;
-        width: 330px;
-        margin-top: 20px; }
-        #body_productos #main_productos section div .imagenes:hover {
-          border: 1px solid #000; }
-    #body_productos #main_productos .produ_fila_uno {
-      grid-area: filaUno;
-      display: flex;
-      justify-content: space-around; }
-    #body_productos #main_productos .produ_fila_dos {
-      grid-area: filaDos;
-      display: flex;
-      justify-content: space-around; }
-    #body_productos #main_productos .produ_fila_tres {
-      grid-area: filaTres;
-      display: flex;
-      justify-content: space-around; }
-
-#body_medidas {
-  height: 100vh; }
-  #body_medidas .main_medidas {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "hombre mujer" "infantil bebe"; }
-    #body_medidas .main_medidas div {
-      height: 30vh;
-      padding: 10px;
-      margin: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      #body_medidas .main_medidas div img {
-        height: 30vh;
-        width: 100%; }
-      #body_medidas .main_medidas div .medidas_hombre {
-        grid-area: hombre; }
-      #body_medidas .main_medidas div .medidas_mujer {
-        grid-area: mujer; }
-      #body_medidas .main_medidas div .medidas_infantil {
-        grid-area: infantil; }
-      #body_medidas .main_medidas div .medidas_bebe {
-        grid-area: bebe; }
-      #body_medidas .main_medidas div img {
-        border: solid black 3px; }
-
-#body_informacion {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; }
-  #body_informacion #main_info {
-    height: 90%; }
-    #body_informacion #main_info .preguntas {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      font-weight: bold; }
-    #body_informacion #main_info section {
-      padding: 40px; }
-      #body_informacion #main_info section div p {
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 40px; }
-
-#body_formulario {
-  height: 130vh; }
-  #body_formulario #main_formulario {
-    height: 85%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "form asideform"; }
-    #body_formulario #main_formulario .formulario {
-      padding-top: 30px;
-      grid-area: form;
-      width: 300px;
-      height: 400px;
-      margin-left: 100px; }
-      #body_formulario #main_formulario .formulario #tituloFormulario {
-        display: inline;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 2rem;
-        font-weight: 400;
-        border-bottom: 1px solid #000;
-        margin-left: 20px; }
-      #body_formulario #main_formulario .formulario form label {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        font-weight: 500; }
-      #body_formulario #main_formulario .formulario form input, #body_formulario #main_formulario .formulario form textarea {
-        width: 150%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        margin-bottom: 10px; }
-    #body_formulario #main_formulario .asideform {
-      grid-area: asideform;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      #body_formulario #main_formulario .asideform div ul h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 40px; }
-      #body_formulario #main_formulario .asideform div ul p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px; }
 
 footer {
   position: relative;
@@ -182,7 +19,7 @@ footer {
   grid-template-columns: 1fr 0.5fr 1fr;
   grid-template-areas: "info logo redes";
   height: 100px;
-  background-color: #e2445f; }
+  background-color: #c50000; }
   footer .infofooter {
     grid-area: info;
     display: flex;
@@ -192,7 +29,8 @@ footer {
       margin-top: 20px;
       color: #000;
       text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif; }
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem; }
       footer .infofooter a:hover {
         text-decoration: underline;
         color: #000; }
@@ -217,6 +55,591 @@ footer {
     footer .logofooter img {
       width: 50px;
       height: 50px; }
+
+#body_index {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; }
+  #body_index main {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "sectionUno" "sectionDos";
+    height: 90%; }
+    #body_index main .sectionUno {
+      height: 60%; }
+      #body_index main .sectionUno .index_titulo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px; }
+        #body_index main .sectionUno .index_titulo h1 {
+          font-size: 3rem;
+          color: red;
+          font-family: "fuenteUno"; }
+      #body_index main .sectionUno .index_Parrafo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        #body_index main .sectionUno .index_Parrafo p {
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          padding: 10px; }
+          #body_index main .sectionUno .index_Parrafo p span a {
+            text-decoration: none;
+            color: red; }
+            #body_index main .sectionUno .index_Parrafo p span a:hover {
+              text-decoration: underline;
+              color: red; }
+    #body_index main .sectionDos {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 30px; }
+      #body_index main .sectionDos .icono_index {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0,0,0,0.2;
+        transition: all 400ms ease; }
+        #body_index main .sectionDos .icono_index:hover {
+          box-shadow: 5px 7px 30px rgba(119, 35, 35, 0.8); }
+        #body_index main .sectionDos .icono_index img {
+          height: 100px;
+          width: 100px;
+          color: black;
+          background-color: rosybrown;
+          border-radius: 50%;
+          margin-bottom: 5px; }
+        #body_index main .sectionDos .icono_index p {
+          font-size: 2rem;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: 10px; }
+
+#body_productos {
+  height: 130vh; }
+  #body_productos main {
+    display: grid;
+    grid-template-rows: 0,5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo"  "filaUno" "filaDos" "filaTres"; }
+    #body_productos main .titulo_producto {
+      grid-area: titulo;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px; }
+      #body_productos main .titulo_producto h1 {
+        font-family: "fuenteUno";
+        color: red; }
+        #body_productos main .titulo_producto h1:hover {
+          text-decoration: underline; }
+    #body_productos main section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 10px; }
+      #body_productos main section .contenedor_producto {
+        height: 350px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0; }
+        #body_productos main section .contenedor_producto:hover {
+          border: 1.5px solid black; }
+        #body_productos main section .contenedor_producto img {
+          height: 90%;
+          width: 100%; }
+        #body_productos main section .contenedor_producto .nombre_producto {
+          margin-top: 10px;
+          text-align: left;
+          height: auto;
+          width: 100%; }
+          #body_productos main section .contenedor_producto .nombre_producto p {
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: 400;
+            padding-left: 5px; }
+    #body_productos main .productos_fila_uno {
+      grid-area: filaUno; }
+    #body_productos main .productos_fila_dos {
+      grid-area: filaDos; }
+    #body_productos main .productos_fila_tres {
+      grid-area: filaTres;
+      margin-bottom: 30px; }
+
+#body_medidas {
+  height: 130vh; }
+  #body_medidas main {
+    height: 90%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "hombre mujer" "infantil bebe"; }
+    #body_medidas main section .titulo_medidas {
+      height: 5%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20px; }
+      #body_medidas main section .titulo_medidas h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #de2342;
+        text-align: center; }
+      #body_medidas main section .titulo_medidas h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #de2342;
+        text-align: center; }
+      #body_medidas main section .titulo_medidas h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #de2342;
+        text-align: center; }
+      #body_medidas main section .titulo_medidas h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #de2342;
+        text-align: center; }
+    #body_medidas main .section_hombre {
+      grid-area: hombre;
+      height: 100%;
+      width: 100%; }
+      #body_medidas main .section_hombre .medidas_hombre {
+        height: 70%;
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #body_medidas main .section_hombre .medidas_hombre table {
+          color: #333333;
+          font-size: 14px;
+          table-layout: fixed;
+          border-collapse: collapse;
+          background-color: #ffd6e4;
+          border: 2px solid #ffc1c8;
+          width: 90%; }
+          #body_medidas main .section_hombre .medidas_hombre table thead {
+            background-color: #ffb1c7;
+            color: #fff; }
+            #body_medidas main .section_hombre .medidas_hombre table thead tr th {
+              padding: 20px 15px;
+              font-weight: 700;
+              font-family: Arial, Helvetica, sans-serif;
+              text-transform: uppercase; }
+          #body_medidas main .section_hombre .medidas_hombre table tbody tr {
+            cursor: pointer; }
+            #body_medidas main .section_hombre .medidas_hombre table tbody tr:hover {
+              background-color: pink; }
+            #body_medidas main .section_hombre .medidas_hombre table tbody tr td {
+              padding: 20px;
+              border-bottom: solid 1px pink; }
+    #body_medidas main .section_mujer {
+      grid-area: mujer;
+      height: 100%;
+      width: 100%; }
+      #body_medidas main .section_mujer .medidas_mujer {
+        height: 70%;
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #body_medidas main .section_mujer .medidas_mujer table {
+          color: #333333;
+          font-size: 14px;
+          table-layout: fixed;
+          border-collapse: collapse;
+          background-color: #ffd6e4;
+          border: 2px solid #ffc1c8;
+          width: 90%; }
+          #body_medidas main .section_mujer .medidas_mujer table thead {
+            background-color: #ffb1c7;
+            color: #fff; }
+            #body_medidas main .section_mujer .medidas_mujer table thead tr th {
+              padding: 20px 15px;
+              font-weight: 700;
+              font-family: Arial, Helvetica, sans-serif;
+              text-transform: uppercase; }
+          #body_medidas main .section_mujer .medidas_mujer table tbody tr {
+            cursor: pointer; }
+            #body_medidas main .section_mujer .medidas_mujer table tbody tr:hover {
+              background-color: pink; }
+            #body_medidas main .section_mujer .medidas_mujer table tbody tr td {
+              padding: 20px;
+              border-bottom: solid 1px pink; }
+    #body_medidas main .section_infantil {
+      grid-area: infantil;
+      height: 100%;
+      width: 100%; }
+      #body_medidas main .section_infantil .medidas_infantil {
+        height: 70%;
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #body_medidas main .section_infantil .medidas_infantil table {
+          color: #333333;
+          font-size: 14px;
+          table-layout: fixed;
+          border-collapse: collapse;
+          background-color: #ffd6e4;
+          border: 2px solid #ffc1c8;
+          width: 90%; }
+          #body_medidas main .section_infantil .medidas_infantil table thead {
+            background-color: #ffb1c7;
+            color: #fff; }
+            #body_medidas main .section_infantil .medidas_infantil table thead tr th {
+              padding: 20px 15px;
+              font-weight: 700;
+              font-family: Arial, Helvetica, sans-serif;
+              text-transform: uppercase; }
+          #body_medidas main .section_infantil .medidas_infantil table tbody tr {
+            cursor: pointer; }
+            #body_medidas main .section_infantil .medidas_infantil table tbody tr:hover {
+              background-color: pink; }
+            #body_medidas main .section_infantil .medidas_infantil table tbody tr td {
+              padding: 20px;
+              border-bottom: solid 1px pink; }
+    #body_medidas main .section_bebe {
+      grid-area: bebe;
+      height: 100%;
+      width: 100%; }
+      #body_medidas main .section_bebe .medidas_bebe {
+        height: 70%;
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #body_medidas main .section_bebe .medidas_bebe table {
+          color: #333333;
+          font-size: 14px;
+          table-layout: fixed;
+          border-collapse: collapse;
+          background-color: #ffd6e4;
+          border: 2px solid #ffc1c8;
+          width: 90%; }
+          #body_medidas main .section_bebe .medidas_bebe table thead {
+            background-color: #ffb1c7;
+            color: #fff; }
+            #body_medidas main .section_bebe .medidas_bebe table thead tr th {
+              padding: 20px 15px;
+              font-weight: 700;
+              font-family: Arial, Helvetica, sans-serif;
+              text-transform: uppercase; }
+          #body_medidas main .section_bebe .medidas_bebe table tbody tr {
+            cursor: pointer; }
+            #body_medidas main .section_bebe .medidas_bebe table tbody tr:hover {
+              background-color: pink; }
+            #body_medidas main .section_bebe .medidas_bebe table tbody tr td {
+              padding: 20px;
+              border-bottom: solid 1px pink; }
+
+#body_informacion {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+  #body_informacion #main_info {
+    height: 90%; }
+    #body_informacion #main_info .preguntas {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: bold; }
+    #body_informacion #main_info section {
+      padding: 40px; }
+      #body_informacion #main_info section div p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px; }
+
+#body_formulario {
+  height: 130vh; }
+  #body_formulario main {
+    height: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "form asideform"; }
+    #body_formulario main .formulario {
+      padding-top: 30px;
+      grid-area: form;
+      width: 300px;
+      height: 400px;
+      margin-left: 100px; }
+      #body_formulario main .formulario #tituloFormulario {
+        display: inline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        border-bottom: 1px solid #000;
+        margin-left: 20px; }
+      #body_formulario main .formulario form label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: 500; }
+      #body_formulario main .formulario form input, #body_formulario main .formulario form textarea {
+        width: 150%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px; }
+    #body_formulario main .asideform {
+      grid-area: asideform;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #body_formulario main .asideform div ul h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px; }
+      #body_formulario main .asideform div ul p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px; }
+
+@media screen and (max-width: 350px) {
+  #body_index {
+    height: 100vh; }
+    #body_index main {
+      height: 90%; }
+      #body_index main .sectionUno {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #body_index main .sectionUno .index_titulo h1 {
+          font-size: 3rem;
+          padding-top: 30px; }
+        #body_index main .sectionUno .index_Parrafo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 30px; }
+          #body_index main .sectionUno .index_Parrafo p {
+            text-align: center;
+            font-size: 2rem; }
+      #body_index main .sectionDos {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px; }
+        #body_index main .sectionDos .icono_index {
+          margin-top: 30px; }
+  #body_productos {
+    height: 600vh; }
+    #body_productos main .titulo_producto {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #body_productos main section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #body_productos main section .contenedor_producto {
+        margin-top: 20px; }
+  #body_medidas {
+    height: 350vh; }
+    #body_medidas main {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: 1fr;
+      grid-template-areas: "hombre" "mujer" "infantil" "bebe"; }
+  #body_formulario {
+    height: 250vh; }
+    #body_formulario main {
+      height: 80%;
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      grid-template-areas: "form" "asideForm"; }
+      #body_formulario main .formulario {
+        display: grid;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+      #body_formulario main .asideform {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; }
+  footer {
+    height: 30%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "info" "logo" "redes";
+    height: auto; }
+    footer .infofooter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; }
+      footer .infofooter a {
+        margin-left: 20px; }
+    footer .redesfooter {
+      grid-area: redes;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; }
+      footer .redesfooter a {
+        margin-right: 20px;
+        margin-top: 20px;
+        color: #000;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif; }
+        footer .redesfooter a:hover {
+          text-decoration: underline;
+          color: #000; }
+    footer .logofooter {
+      grid-area: logo;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; }
+      footer .logofooter img {
+        width: 50px;
+        height: 50px; } }
+
+@media screen and (max-width: 480px) {
+  #body_index {
+    height: 100vh; }
+    #body_index main {
+      height: 90%; }
+      #body_index main .sectionUno {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #body_index main .sectionUno .index_titulo h1 {
+          font-size: 3rem;
+          padding-top: 30px; }
+        #body_index main .sectionUno .index_Parrafo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 30px; }
+          #body_index main .sectionUno .index_Parrafo p {
+            text-align: center;
+            font-size: 2rem; }
+      #body_index main .sectionDos {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px; }
+        #body_index main .sectionDos .icono_index {
+          margin-top: 30px; }
+  #body_productos {
+    height: 600vh; }
+    #body_productos main .titulo_producto {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #body_productos main section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #body_productos main section .contenedor_producto {
+        margin-top: 20px; }
+  #body_medidas {
+    height: 350vh; }
+    #body_medidas main {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: 1fr;
+      grid-template-areas: "hombre" "mujer" "infantil" "bebe"; }
+  #body_formulario {
+    height: 250vh; }
+    #body_formulario main {
+      height: 80%;
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      grid-template-areas: "form" "asideForm"; }
+      #body_formulario main .formulario {
+        display: grid;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+      #body_formulario main .asideform {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; }
+  footer {
+    height: 30%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "info" "logo" "redes";
+    height: auto; }
+    footer .infofooter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; }
+      footer .infofooter a {
+        margin-left: 20px; }
+    footer .redesfooter {
+      grid-area: redes;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; }
+      footer .redesfooter a {
+        margin-right: 20px;
+        margin-top: 20px;
+        color: #000;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif; }
+        footer .redesfooter a:hover {
+          text-decoration: underline;
+          color: #000; }
+    footer .logofooter {
+      grid-area: logo;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; }
+      footer .logofooter img {
+        width: 50px;
+        height: 50px; } }
 
 * {
   margin: 0;
