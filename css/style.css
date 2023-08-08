@@ -1,6 +1,6 @@
 @font-face {
   font-family: "titulo";
-  src: url(../../assets/fonts/); }
+  src: url("../../assets/fonts/GentyDemo-Regular.otf"); }
 
 @font-face {
   font-family: "fuenteUno";
@@ -177,7 +177,7 @@ footer {
       margin-bottom: 30px; }
 
 #body_medidas {
-  height: 130vh; }
+  height: 150vh; }
   #body_medidas main {
     height: 90%;
     display: grid;
@@ -423,7 +423,7 @@ footer {
   #body_index {
     height: 100vh; }
     #body_index main {
-      height: 90%; }
+      height: 80%; }
       #body_index main .sectionUno {
         height: 50%;
         width: 100%;
@@ -449,7 +449,7 @@ footer {
         align-items: center;
         margin-top: 100px; }
         #body_index main .sectionDos .icono_index {
-          margin-top: 30px; }
+          margin-top: 60px; }
   #body_productos {
     height: 600vh; }
     #body_productos main .titulo_producto {
