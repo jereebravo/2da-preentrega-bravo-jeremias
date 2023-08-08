@@ -419,117 +419,6 @@ footer {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px; }
 
-@media screen and (max-width: 350px) {
-  #body_index {
-    height: 100vh; }
-    #body_index main {
-      height: 80%; }
-      #body_index main .sectionUno {
-        height: 50%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        #body_index main .sectionUno .index_titulo h1 {
-          font-size: 3rem;
-          padding-top: 30px; }
-        #body_index main .sectionUno .index_Parrafo {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding-top: 30px; }
-          #body_index main .sectionUno .index_Parrafo p {
-            text-align: center;
-            font-size: 2rem; }
-      #body_index main .sectionDos {
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px; }
-        #body_index main .sectionDos .icono_index {
-          margin-top: 60px; }
-  #body_productos {
-    height: 600vh; }
-    #body_productos main .titulo_producto {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    #body_productos main section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      #body_productos main section .contenedor_producto {
-        margin-top: 20px; }
-  #body_medidas {
-    height: 350vh; }
-    #body_medidas main {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-columns: 1fr;
-      grid-template-areas: "hombre" "mujer" "infantil" "bebe"; }
-  #body_formulario {
-    height: 250vh; }
-    #body_formulario main {
-      height: 80%;
-      width: 100%;
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: 1fr;
-      grid-template-areas: "form" "asideForm"; }
-      #body_formulario main .formulario {
-        display: grid;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center; }
-      #body_formulario main .asideform {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center; }
-  footer {
-    height: 30%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "info" "logo" "redes";
-    height: auto; }
-    footer .infofooter {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px; }
-      footer .infofooter a {
-        margin-left: 20px; }
-    footer .redesfooter {
-      grid-area: redes;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px; }
-      footer .redesfooter a {
-        margin-right: 20px;
-        margin-top: 20px;
-        color: #000;
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif; }
-        footer .redesfooter a:hover {
-          text-decoration: underline;
-          color: #000; }
-    footer .logofooter {
-      grid-area: logo;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px; }
-      footer .logofooter img {
-        width: 50px;
-        height: 50px; } }
-
 @media screen and (max-width: 480px) {
   #body_index {
     height: 100vh; }
