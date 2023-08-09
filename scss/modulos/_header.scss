@@ -1,7 +1,13 @@
 header{
-    background-color:#ffd6e4;
+    background-color:$color_principal;
     height: 100px;
     
     .logoNav{
         height: 75px;}
+}
+
+
+.navbar-expand-lg {
+ 
+    background-color: $color_principal;
 }

@@ -20,6 +20,9 @@ header {
   header .logoNav {
     height: 75px; }
 
+.navbar-expand-lg {
+  background-color: #ffd6e4; }
+
 footer {
   position: relative;
   bottom: 0;
