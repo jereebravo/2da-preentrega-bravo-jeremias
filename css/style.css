@@ -38,7 +38,8 @@ footer {
       color: #000;
       text-decoration: none;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 1rem; }
+      font-size: 13px;
+      font-weight: 700; }
       footer .infofooter a:hover {
         text-decoration: underline;
         color: #000; }
@@ -51,7 +52,9 @@ footer {
       margin-top: 20px;
       color: #000;
       text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif; }
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700; }
       footer .redesfooter a:hover {
         text-decoration: underline;
         color: #000; }
