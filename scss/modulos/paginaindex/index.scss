@@ -22,8 +22,8 @@
             margin-top: 20px;
            h1{
             font-size: 3rem;
-            color: red;
-            font-family: "fuenteUno";
+            color: $color_titulos;
+            font-family: $fuente_titulos;
           }
         }
         
@@ -33,7 +33,7 @@
           justify-content: center;
           p {
             font-size: 30px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: $fuente_principal;
             text-align: center;
             padding: 10px;
             span{
@@ -68,7 +68,6 @@
           text-align: center;
           box-shadow: 0,0,0,0.2;
           transition: all 400ms ease;
-          // background-image: linear-gradient(to right, #ffadc0, #ffc5d8, #ffd6e4);
           &:hover{
             box-shadow: 5px 7px 30px rgba(119, 35, 35, 0.8);
           }
@@ -84,7 +83,7 @@
           }
           p{
             font-size: 2rem;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: $fuente_principal;
             margin-top: 10px;
           }
         }

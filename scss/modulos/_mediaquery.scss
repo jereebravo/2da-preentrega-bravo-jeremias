@@ -2,15 +2,15 @@
 
 //----------------celular-----------//
 
-    @media screen and (max-width: 480px){
+    @media (min-width: 320px) and (max-width: 480px){
           // ----responsive pagina index--------//
           #body_index{
-            height: 100vh;
+            height: 150vh;
             main{
                 height: 90%;
         
                 .sectionUno{
-                    height: 50%;
+                    height: 30%;
                     width: 100%;
                     display: flex;
                     flex-direction: column;
@@ -36,7 +36,7 @@
                     }
                 }
                 .sectionDos{
-                    height: 50%;
+                    height: 70%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -73,7 +73,7 @@
         
         // -------------pagina medidas---------------//
         #body_medidas{
-            height: 350vh;
+            height: 390vh;
             main{
                 display: grid;
                 grid-template-rows: repeat(4, 1fr);
@@ -88,27 +88,23 @@
         
         // -----------pagina formulario------------------//
         #body_formulario{
-            height: 250vh;
+            height: 160vh;
             main{
-                height: 80%;
+                height: 90%;
                 width: 100%;
-                display: grid;
-                grid-template-rows: repeat(2, 1fr);
-                grid-template-columns: 1fr;
-                grid-template-areas: 
-                "form"
-                "asideForm";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 .formulario{
-                    display: grid;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
+                    width: 50%;
+                    margin-right: 200px;
                 }
-                .asideform{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
+                aside{
+                    height: 200px;
+                    width: 300px;
+                    margin-top: 300px;
+                    background-color: aqua;
+
                 }
             
         }
@@ -175,4 +171,53 @@
  }
     } 
 
+    //--------------- tablet----------------------//
+    @media (min-width: 481px) and (max-width: 767px){
+        #body_index{
+            height: 100vh;
+            main{
+                height: 90%;
+        
+                .sectionUno{
+                    height: 50%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .index_titulo{
+                    
+                        h1{
+                           font-size: 3rem;
+                           padding-top: 30px;
+        
+                        }
+                    }
+                    .index_Parrafo{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-top: 30px;
+                        p{
+                            text-align: center;
+                            font-size: 2rem;
+        
+                        }
+                    }
+                }
+                .sectionDos{
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 100px;
+                    .icono_index{
+                        margin-top: 30px;
+        
+                    }
+                }
+              
+            }
+        }
+    }
        

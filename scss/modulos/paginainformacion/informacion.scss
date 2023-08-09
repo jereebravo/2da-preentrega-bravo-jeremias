@@ -1,12 +1,12 @@
 #body_informacion{
-    height: 150vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     #main_info{
         height: 95%;
         .preguntas{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: $fuente_principal;
             font-size: 15px;
             font-weight: bold;}
         section{
@@ -14,7 +14,7 @@
             
             div{
                 p{
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family:$fuente_principal;
                     margin-top: 40px;}
         }
     }

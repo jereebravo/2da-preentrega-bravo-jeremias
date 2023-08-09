@@ -6,6 +6,14 @@
   font-family: "fuenteUno";
   src: url("../../assets/fonts/GentyDemo-Regular.otf"); }
 
+@font-face {
+  font-family: "titulo";
+  src: url("../../assets/fonts/GentyDemo-Regular.otf"); }
+
+@font-face {
+  font-family: "fuenteUno";
+  src: url("../../assets/fonts/GentyDemo-Regular.otf"); }
+
 header {
   background-color: #ffd6e4;
   height: 100px; }
@@ -29,7 +37,7 @@ footer {
       margin-top: 20px;
       color: #000;
       text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "titulo";
       font-size: 1rem; }
       footer .infofooter a:hover {
         text-decoration: underline;
@@ -43,7 +51,7 @@ footer {
       margin-top: 20px;
       color: #000;
       text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif; }
+      font-family: "titulo"; }
       footer .redesfooter a:hover {
         text-decoration: underline;
         color: #000; }
@@ -75,7 +83,7 @@ footer {
         margin-top: 20px; }
         #body_index main .sectionUno .index_titulo h1 {
           font-size: 3rem;
-          color: red;
+          color: #de2342;
           font-family: "fuenteUno"; }
       #body_index main .sectionUno .index_Parrafo {
         display: flex;
@@ -137,7 +145,7 @@ footer {
       margin-top: 20px; }
       #body_productos main .titulo_producto h1 {
         font-family: "fuenteUno";
-        color: red; }
+        color: #de2342; }
         #body_productos main .titulo_producto h1:hover {
           text-decoration: underline; }
     #body_productos main section {
@@ -361,7 +369,7 @@ footer {
               border-bottom: solid 1px pink; }
 
 #body_informacion {
-  height: 150vh;
+  height: 160vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
@@ -407,25 +415,28 @@ footer {
         border: 1px solid #ccc;
         border-radius: 3px;
         margin-bottom: 10px; }
-    #body_formulario main .asideform {
+    #body_formulario main aside {
       grid-area: asideform;
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      #body_formulario main .asideform div ul h3 {
+      #body_formulario main aside div ul h2 {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 40px; }
-      #body_formulario main .asideform div ul p {
+      #body_formulario main aside div ul h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px; }
+      #body_formulario main aside div ul p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px; }
 
-@media screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   #body_index {
-    height: 100vh; }
+    height: 150vh; }
     #body_index main {
       height: 90%; }
       #body_index main .sectionUno {
-        height: 50%;
+        height: 30%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -442,7 +453,7 @@ footer {
             text-align: center;
             font-size: 2rem; }
       #body_index main .sectionDos {
-        height: 50%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -464,31 +475,28 @@ footer {
       #body_productos main section .contenedor_producto {
         margin-top: 20px; }
   #body_medidas {
-    height: 350vh; }
+    height: 390vh; }
     #body_medidas main {
       display: grid;
       grid-template-rows: repeat(4, 1fr);
       grid-template-columns: 1fr;
       grid-template-areas: "hombre" "mujer" "infantil" "bebe"; }
   #body_formulario {
-    height: 250vh; }
+    height: 160vh; }
     #body_formulario main {
-      height: 80%;
+      height: 90%;
       width: 100%;
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: 1fr;
-      grid-template-areas: "form" "asideForm"; }
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
       #body_formulario main .formulario {
-        display: grid;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center; }
-      #body_formulario main .asideform {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center; }
+        width: 50%;
+        margin-right: 200px; }
+      #body_formulario main aside {
+        height: 200px;
+        width: 300px;
+        margin-top: 300px;
+        background-color: aqua; }
   footer {
     height: 30%;
     display: grid;
@@ -529,6 +537,38 @@ footer {
       footer .logofooter img {
         width: 50px;
         height: 50px; } }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  #body_index {
+    height: 100vh; }
+    #body_index main {
+      height: 90%; }
+      #body_index main .sectionUno {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #body_index main .sectionUno .index_titulo h1 {
+          font-size: 3rem;
+          padding-top: 30px; }
+        #body_index main .sectionUno .index_Parrafo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 30px; }
+          #body_index main .sectionUno .index_Parrafo p {
+            text-align: center;
+            font-size: 2rem; }
+      #body_index main .sectionDos {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px; }
+        #body_index main .sectionDos .icono_index {
+          margin-top: 30px; } }
 
 * {
   margin: 0;

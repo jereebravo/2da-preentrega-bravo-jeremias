@@ -20,32 +20,32 @@
                 justify-content: center;
                 margin-top: 20px;
                 h1{
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: $fuente_principal;
                     font-size: 1.5rem;
                     font-weight:800;
-                    color:#de2342;
+                    color:$color_titulos;
                     text-align: center;
 
                 }
                 h2{
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: $fuente_principal;
                     font-size: 1.5rem;
                     font-weight:800;
-                    color:#de2342;
+                    color:$color_titulos;
                     text-align: center;
                 }
                 h3{
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: $fuente_principal;
                     font-size: 1.5rem;
                     font-weight:800;
-                    color:#de2342;
+                    color:$color_titulos;
                     text-align: center;
                 }
                 h4{
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: $fuente_principal;
                     font-size: 1.5rem;
                     font-weight:800;
-                    color:#de2342;
+                    color:$color_titulos;
                     text-align: center;
                 }
             }
@@ -70,7 +70,7 @@
                     font-size: 14px;
                     table-layout: fixed;
                     border-collapse: collapse;
-                    background-color:  #ffd6e4;
+                    background-color:  $color_principal;
                     border: 2px solid #ffc1c8;
                     width: 90%;
                     
@@ -81,7 +81,7 @@
                             th{
                                 padding: 20px 15px;
                                 font-weight: 700;
-                                font-family: Arial, Helvetica, sans-serif;
+                                font-family: $fuente_principal;
                                 text-transform: uppercase;
                              
     
@@ -125,7 +125,7 @@
                 font-size: 14px;
                 table-layout: fixed;
                 border-collapse: collapse;
-                background-color: #ffd6e4;
+                background-color: $color_principal;
                 border: 2px solid #ffc1c8;
                 width: 90%;
                 thead{
@@ -135,7 +135,7 @@
                         th{
                             padding: 20px 15px;
                             font-weight: 700;
-                            font-family: Arial, Helvetica, sans-serif;
+                            font-family: $fuente_principal;
                             text-transform: uppercase;
                          }
                     }
@@ -175,7 +175,7 @@
                 font-size: 14px;
                 table-layout: fixed;
                 border-collapse: collapse;
-                background-color: #ffd6e4;
+                background-color: $color_principal;
                 border: 2px solid #ffc1c8;
                 width: 90%;
                 thead{
@@ -186,7 +186,7 @@
                         th{
                             padding: 20px 15px;
                             font-weight: 700;
-                            font-family: Arial, Helvetica, sans-serif;
+                            font-family: $fuente_principal;
                             text-transform: uppercase;
                         }
                     }
@@ -226,7 +226,7 @@
                 font-size: 14px;
                 table-layout: fixed;
                 border-collapse: collapse;
-                background-color: #ffd6e4;
+                background-color: $color_principal;
                 border: 2px solid #ffc1c8;
                 width: 90%;
                 thead{
@@ -236,7 +236,7 @@
                         th{
                             padding: 20px 15px;
                             font-weight: 700;
-                            font-family: Arial, Helvetica, sans-serif;
+                            font-family: $fuente_principal;
                             text-transform: uppercase;
                         }
                     }

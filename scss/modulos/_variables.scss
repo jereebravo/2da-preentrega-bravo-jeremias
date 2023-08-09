@@ -1,2 +1,10 @@
-$color-header:#ffd6e4;
-$arial: "arial", helvetica, sans-serif
+// ----------------------FUENTES-------------------------//
+@import "./fonts";
+$fuente_principal: Arial, Helvetica, sans-serif;
+$fuente_titulos: "fuenteUno";
+$fuente_subtitulos: "titulo";
+
+
+//--------------------- colores------------------------//
+$color_principal: #ffd6e4;
+$color_titulos: #de2342;
