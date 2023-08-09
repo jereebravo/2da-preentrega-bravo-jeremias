@@ -463,17 +463,19 @@ footer {
           margin-top: 30px; }
   #body_productos {
     height: 600vh; }
-    #body_productos main .titulo_producto {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    #body_productos main section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      #body_productos main section .contenedor_producto {
-        margin-top: 20px; }
+    #body_productos main {
+      height: 90%; }
+      #body_productos main .titulo_producto {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      #body_productos main section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #body_productos main section .contenedor_producto {
+          margin-top: 20px; }
   #body_medidas {
     height: 390vh; }
     #body_medidas main {
@@ -495,8 +497,7 @@ footer {
       #body_formulario main aside {
         height: 200px;
         width: 300px;
-        margin-top: 300px;
-        background-color: aqua; }
+        margin-top: 300px; }
   footer {
     height: 30%;
     display: grid;
@@ -542,7 +543,7 @@ footer {
   #body_index {
     height: 100vh; }
     #body_index main {
-      height: 90%; }
+      height: 95%; }
       #body_index main .sectionUno {
         height: 50%;
         width: 100%;
@@ -563,12 +564,93 @@ footer {
       #body_index main .sectionDos {
         height: 50%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
         margin-top: 100px; }
         #body_index main .sectionDos .icono_index {
-          margin-top: 30px; } }
+          width: 280px;
+          height: 330px;
+          margin-top: 30px; }
+  #body_productos {
+    height: 600vh; }
+    #body_productos main {
+      height: 90%; }
+      #body_productos main .titulo_producto {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      #body_productos main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        #body_productos main section .contenedor_producto {
+          width: 40%;
+          margin: 35px; }
+  #body_informacion {
+    height: 180vh; }
+  #body_medidas {
+    height: 390vh; }
+    #body_medidas main {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: 1fr;
+      grid-template-areas: "hombre" "mujer" "infantil" "bebe"; }
+  #body_formulario {
+    height: 230vh; }
+    #body_formulario main {
+      height: 90%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #body_formulario main .formulario {
+        width: 50%;
+        margin-right: 200px; }
+      #body_formulario main aside {
+        height: 200px;
+        width: 300px;
+        margin-top: 300px; }
+  footer {
+    height: 30%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "info" "logo" "redes";
+    height: auto; }
+    footer .infofooter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; }
+      footer .infofooter a {
+        margin-left: 20px; }
+    footer .redesfooter {
+      grid-area: redes;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; }
+      footer .redesfooter a {
+        margin-right: 20px;
+        margin-top: 20px;
+        color: #000;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif; }
+        footer .redesfooter a:hover {
+          text-decoration: underline;
+          color: #000; }
+    footer .logofooter {
+      grid-area: logo;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; }
+      footer .logofooter img {
+        width: 50px;
+        height: 50px; } }
 
 * {
   margin: 0;
